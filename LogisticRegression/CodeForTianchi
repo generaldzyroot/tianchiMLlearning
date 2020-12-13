@@ -1,0 +1,43 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.linear_model import LogisticRegression
+
+x_features = np.array([[-1,-2],[-2, -1], [-3, -2], [1, 3], [2, 1], [3, 2]])
+y_label = np.array([0,0,0,1,1,1])
+lr_clf = LogisticRegression()
+lr_clf = lr_clf.fit(x_features,y_label)
+
+print("the weighet of Logistic Regression:",lr_clf.coef_)#显示参数
+print("the intercept(w0) of Logistic Regression",lr_clf.intercept_)
+
+#可视化
+plt.figure()
+plt.scatter(x_features[:,0],x_features[:,1],c=y_label,s=20, cmap='viridis')
+# 参数s：点的大小，c：label 信息，cmap颜色
+plt.show()
+
+
+## 可视化决策边界
+nx, ny = 200, 100
+# 获取或者是设定x座标轴的范围
+x_min, x_max = plt.xlim()
+y_min, y_max = plt.ylim()
+# 以x_min为下界,x_max为上界，平均分成nx个数
+# np.meshgrid(X,Y)
+# 是两个网格点的横纵坐标列向量,X 向量代表着200个数，Y向量代表着100个数
+x_grid,y_grid = np.meshgrid(np.linspace(x_min,x_max,nx),np.linspace(y_min,y_max,ny))
+# 返回的x_grid表示y_grid个长度为x_grid的向量，每个向量为x_grid
+# 返回的y_grid表示y_grid个长度为x_grid的向量，每个向量均为重复的y_grid[i]
+# 这样可以将整个图片网格化
+
+z_proba = lr_clf.predict_proba(np.c_[x_grid.ravel(), y_grid.ravel()])
+# np.ravel将数组连续化，比如np.ravel([[1,2,3],[1,2,3],[1,2,3]])
+# 返回array([1, 2, 3, 1, 2, 3, 1, 2, 3])
+# 故x_grid.ravel()返回长度为200*100的一维数组，100组，一组为一条横坐标
+# y_grid.ravel()为200*100的一维数组，100组，一组为一条纵坐标
+# np.c_按行连接数组，因为在本例中都是一维数组，故相当于组成200*100 个坐标
+# predict_proba(生成属于某一类的概率)(对所有网格进行预测)
+z_proba_true = z_proba[:,1].reshape(x_grid.shape)
+plt.contour(x_grid,y_grid,z_proba_true,[0.5],linewidth = 2,colors = 'red')
+plt.show() #0.5 Z_proba_true 的值为0。5
