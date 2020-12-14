@@ -43,4 +43,17 @@ tips:
 
 # Accuracy_score
 
-# Matric的使用
+|          | Guessed Positive   | Guessed Negative |
+| -------- | ------------------ | ---------------- |
+| Positive | True Positive(TP)  | False Negative   |
+| Negative | False Positive(FP) | True Negative    |
+
+准确率Accuracy:
+
+How many did we classified correctly?
+
+= (TP+TN)/总数
+
+准确率不适用的类型
+
+
