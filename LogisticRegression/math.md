@@ -2,7 +2,7 @@
 
 ## logistic funciton
 
-$$\theta$$为参数,共有i个观测值,参数的个数为j个
+$\theta$为参数,共有i个观测值,参数的个数为j个
 
 <img src="https://latex.codecogs.com/gif.latex?h_\theta(x)=g(\theta^T (x))=\frac{e^{\theta^T x}}{1&plus;e^{\theta^T x}" title="y=\frac{e^{\theta}}{1+e^\theta}"/>
 
@@ -33,8 +33,7 @@ $$\theta$$为参数,共有i个观测值,参数的个数为j个
 
 tips:
 
-<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;g(\theta^T&space;x)}{\partial&space;\theta_j}\\&space;=(\frac{1}{1&plus;e^{-\theta^T&space;x}})^{'}\\&space;=\frac{-(e^{-\theta^T&space;x})^{'}}{(1&plus;e^{-\theta^T&space;x})^2}\\&space;=\frac{-(e^{-\theta^T&space;x})^{'}}{(1&plus;e^{-\theta^T&space;x})^2}\\&space;=\frac{e^{-\theta^T&space;x}}{(1&plus;e^{-\theta^T&space;x})^2}(\theta^Tx)^{'}\\&space;=\frac{1}{(1&plus;e^{-\theta^T&space;x})}\frac{e^{-\theta^T&space;x}}{(1&plus;e^{-\theta^T&space;x})}(\theta^Tx)^{'}\\&space;=(g(\theta^T&space;x))(1-g(\theta^T&space;x))(\theta^Tx)^{'}" title="\frac{\partial g(\theta^T x)}{\partial \theta_j}\\ =(\frac{1}{1+e^{-\theta^T x}})^{'}\\ =\frac{-(e^{-\theta^T x})^{'}}{(1+e^{-\theta^T x})^2}\\ =\frac{-(e^{-\theta^T x})^{'}}{(1+e^{-\theta^T x})^2}\\ =\frac{e^{-\theta^T x}}{(1+e^{-\theta^T x})^2}(\theta^Tx)^{'}\\ =\frac{1}{(1+e^{-\theta^T x})}\frac{e^{-\theta^T x}}{(1+e^{-\theta^T x})}(\theta^Tx)^{'}\\ =(g(\theta^T x))(1-g(\theta^T x))(\theta^Tx)^{'}" /> 
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;g(\theta^T&space;x)}{\partial&space;\theta_j}\\&space;=(\frac{1}{1&plus;e^{-\theta^T&space;x}})^{'}\\&space;=\frac{-(e^{-\theta^T&space;x})^{'}}{(1&plus;e^{-\theta^T&space;x})^2}\\&space;=\frac{1}{(1&plus;e^{-\theta^T&space;x})}\frac{e^{-\theta^T&space;x}}{(1&plus;e^{-\theta^T&space;x})}(\theta^Tx)^{'}\\&space;=(g(\theta^T&space;x))(1-g(\theta^T&space;x))(\theta^Tx)^{'}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;g(\theta^T&space;x)}{\partial&space;\theta_j}\\&space;=(\frac{1}{1&plus;e^{-\theta^T&space;x}})^{'}\\&space;=\frac{-(e^{-\theta^T&space;x})^{'}}{(1&plus;e^{-\theta^T&space;x})^2}\\&space;=\frac{1}{(1&plus;e^{-\theta^T&space;x})}\frac{e^{-\theta^T&space;x}}{(1&plus;e^{-\theta^T&space;x})}(\theta^Tx)^{'}\\&space;=(g(\theta^T&space;x))(1-g(\theta^T&space;x))(\theta^Tx)^{'}" title="\frac{\partial&space;g(\theta^T&space;x)}{\partial&space;\theta_j}\\ =(\frac{1}{1&plus;e^{-\theta^T&space;x}})^{'}\\ =\frac{-(e^{-\theta^T&space;x})^{'}}{(1&plus;e^{-\theta^T&space;x})^2}\\ =\frac{1}{(1&plus;e^{-\theta^T&space;x})}\frac{e^{-\theta^T&space;x}}{(1&plus;e^{-\theta^T&space;x})}(\theta^Tx)^{'}\\ =(g(\theta^T&space;x))(1-g(\theta^T&space;x))(\theta^Tx)^{'}" /></a>
 
 
 故
