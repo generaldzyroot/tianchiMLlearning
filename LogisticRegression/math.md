@@ -4,9 +4,14 @@
 
 $\theta$为参数,共有i个观测值,参数的个数为j个
 
-<img src="https://latex.codecogs.com/gif.latex?h_\theta(x)=g(\theta^T (x))=\frac{e^{\theta^T x}}{1&plus;e^{\theta^T x}" title="y=\frac{e^{\theta}}{1+e^\theta}"/>
 
-<img src="https://latex.codecogs.com/gif.latex?g(z)=\frac{e^z}{1&plus;e^z}&space;=&space;\frac{1}{1&plus;e^{-z}}" title="g(z)=\frac{e^z}{1+e^z} = \frac{1}{1+e^{-z}}" />
+
+<img src="https://latex.codecogs.com/gif.latex?h_{\theta}(x)=&space;\frac{e^{\theta^T&space;x}}{1&plus;e^{\theta^T&space;x}}=\frac{1}{1&plus;e^{-\theta^T&space;x}}" title="h_{\theta}(x)= \frac{e^{\theta^T x}}{1+e^{\theta^T x}}=\frac{1}{1+e^{-\theta^T x}}" />
+
+
+
+
+<img src="https://latex.codecogs.com/gif.latex?g(z)=\frac{e^z}{1&plus;e^z}&space;=&space;\frac{1}{1&plus;e^{-z}}" title="g(z)=\frac{e^z}{1+e^z} = \frac{1}{1+e^{-z})})" />
 
 当假设y仅有两个取值0,1时
 
