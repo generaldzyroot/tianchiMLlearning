@@ -23,7 +23,7 @@ $\theta$为参数,共有i个观测值,参数的个数为j个
 
 
 
-<img src="https://latex.codecogs.com/gif.latex?L(\theta)&space;=P(y|x;\theta)=\coprod_{i}P(y^{i}|x^{i};\theta)=\coprod_{i}h_\theta&space;(x^{i})^{y^{(i)}}\coprod_{i}(1-&space;h_\theta&space;(x^{i})^{1-y^{(i)}}" title="L(\theta) =P(y|x;\theta)=\coprod_{i}P(y^{i}|x^{i};\theta)=\coprod_{i}h_\theta (x^{i})^{y^{(i)}}\coprod_{i}(1- h_\theta (x^{i})^{1-y^{(i)}}" />
+<img src="https://latex.codecogs.com/gif.latex?L(\theta)&space;=P(y|x;\theta)=\coprod_{i}P(y^{i}|x^{i};\theta)=\coprod_{i}h_\theta&space;(x^{i})^{y^{i}}\coprod_{i}(1-&space;h_\theta&space;(x^{i})^{1-y^{i}}" title="L(\theta) =P(y|x;\theta)=\coprod_{i}P(y^{i}|x^{i};\theta)=\coprod_{i}h_\theta (x^{i})^{y^{(i)}}\coprod_{i}(1- h_\theta (x^{i})^{1-y^{(i)}}" />
 
 
 
