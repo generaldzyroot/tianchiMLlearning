@@ -62,3 +62,18 @@ How many did we classified correctly?
 准确率不适用的类型
 
 
+# 参考
+<div id="refer-anchor-1"></div>
+
+- [1] [cs229]
+
+<div id="refer-anchor-2"></div>
+
+- [2] [西瓜书]
+
+<div id="refer-anchor-2"></div>
+
+- [3] [李航] 统计学习导论
+
+仅供自己学习使用
+
