@@ -144,8 +144,7 @@
 6. <img src="https://latex.codecogs.com/gif.latex?Y=PX" title="Y=PX" />即为降维到k维后的数据
 
 ## 另一种思路(PCA)
-
-
+<img src="https://github.com/generaldzyroot/tianchiMLlearning/blob/main/PCA/images/PCA(2).png" div align=center />
 
 
 
